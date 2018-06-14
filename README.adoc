@@ -51,7 +51,7 @@ v{version}, 2018-06-15
 
 **{name}** is {desc}.
 
-image::./Assets/Preview.png
+image::./Assets/Preview.png[Preview]
 
 == 📋 Requirements
 
