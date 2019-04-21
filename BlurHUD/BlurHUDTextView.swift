@@ -34,7 +34,7 @@ open class HUDTextView: HUDWideBaseView {
         titleLabel.frame = bounds.insetBy(dx: padding, dy: padding)
     }
 
-    open let titleLabel: UILabel = {
+    public let titleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 17.0)

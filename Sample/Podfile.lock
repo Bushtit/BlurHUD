@@ -1,0 +1,16 @@
+PODS:
+  - BlurHUD (1.1.0)
+
+DEPENDENCIES:
+  - BlurHUD (from `../`)
+
+EXTERNAL SOURCES:
+  BlurHUD:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BlurHUD: fc88fdf5a3ba235d8d6563d8579fbae41766249f
+
+PODFILE CHECKSUM: e0178760edcff8587cd6a9b76b5c8ac8c0e7d328
+
+COCOAPODS: 1.7.0.beta.3

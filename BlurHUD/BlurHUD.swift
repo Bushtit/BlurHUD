@@ -42,7 +42,7 @@ open class HUD: NSObject {
         super.init()
         NotificationCenter.default.addObserver(self,
             selector: #selector(HUD.willEnterForeground(_:)),
-            name: NSNotification.Name.UIApplicationWillEnterForeground,
+            name: UIApplication.willEnterForegroundNotification,
             object: nil)
         userInteractionOnUnderlyingViewsEnabled = false
         container.frameView.autoresizingMask = [ .flexibleLeftMargin,
@@ -112,7 +112,7 @@ open class HUD: NSObject {
         // If the grace time is set, postpone the BlurHUD display
         if gracePeriod > 0.0 {
             let timer = Timer(timeInterval: gracePeriod, target: self, selector: #selector(HUD.handleGraceTimer(_:)), userInfo: nil, repeats: false)
-            RunLoop.current.add(timer, forMode: .commonModes)
+            RunLoop.current.add(timer, forMode: RunLoop.Mode.common)
             graceTimer = timer
         } else {
             showContent()
